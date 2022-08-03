@@ -16,6 +16,14 @@ dependencies {
     implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.31'
 }
 
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'app.App'
+        )
+    }
+}
+
 test {
     useJUnitPlatform()
 }
