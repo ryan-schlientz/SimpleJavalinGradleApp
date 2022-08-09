@@ -11,7 +11,7 @@ public class App {
 
         Javalin app = Javalin.create(JavalinConfig::enableCorsForAllOrigins);
 
-        app.get("/", ctx -> { ctx.result("Simple Javalin App using Gradle!!"); });
+        app.get("/", ctx -> { ctx.result("Simple Javalin App using Gradle!!!"); });
         app.get("/hello", ctx -> { ctx.result("Hello World!"); });
         app.get("/test", ctx -> {  ctx.status(201); ctx.result("Test " + ++counter); });
 
